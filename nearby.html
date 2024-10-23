@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
 
     <title>MedBuddy</title>
     <!-- Linking of sheets -->
@@ -27,7 +28,7 @@
         crossorigin="anonymous"></script>
 
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="neaby.css">
 
     <!-- Font linking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,29 +47,18 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    <div class="container">
-        <div class="box push" style="border-top: 6px solid cyan">
-            <h3>Nearby Hospital</h3>
-            <p>check your nearby health care centers</p>
-            <button onclick="document.location='nearby.html'">GO</button>
-            <img src="https://images.emojiterra.com/google/android-12l/512px/1f3e5.png" width="100px" height="100px" alt="Hospital">
-        </div>
-        <div class="box" style="border-top: 6px solid red;">
-            <h3> Medicine Timer</h3>
-            <p> Enable a medicine timer, to remind you about medicine</p>
-            <button onclick="document.location='default.asp'">SET TIMER</button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVrk1tcaCQQ0RlMatSQdIFWTFYTxO_xsVkJw&s" width="100px" height="100px" alt="Timer">
-        </div>
-        <div class="box push" style="border-top: 6px solid blue">
-            <h3>TALK WITH DOC</h3>
-            <p> Talk with a real Doctor </p>
-            <button onclick="document.location='default.asp'">TALK</button><img src="https://static.tiktokemoji.com/202409/12/mHcDt75K.webp" width="100px" height="100px" alt="Doctor">
-        </div>
-        <div class="box" style="border-top: 6px solid rgb(238, 115, 71)">
-            <h3> AI Doctor</h3>
-            <p> Chat with AI, about your health issue</p>
-            <button onclick="document.location='default.asp'">START</button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLFJCtgBzlBN5UG04dHOUqXl5Da_U4azzrjA&s" width="100px" height="100px" alt="AI">
-        </div>
+    <h1>Find Your Nearby Health Care Centers from the Map</h1>
+
+    <div class="google-maps">
+        <iframe  style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Nearby%20Hospital&key=AIzaSyAVn6ea2iJcMq9Wp0pKGlr3RpA8SVK1MCM"></iframe>    
     </div>
+    <br>
+
+    <button onclick="window.location='https'+':'+'/'+'/www.google.com/maps/search/nearby+hospital'">Open In Google Maps</button>
+    <br>
+
 </body>
+<br>
 <footer> <b>&#169;</b> 2024 MADE BY <b>SAIKAT</b></footer>
+
 </html>
